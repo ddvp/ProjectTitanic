@@ -1,0 +1,40 @@
+<!--
+ Copyright (c) 2014, 2022, Oracle and/or its affiliates.
+ Licensed under The Universal Permissive License (UPL), Version 1.0
+ as shown at https://oss.oracle.com/licenses/upl/
+ -->
+<div class="oj-hybrid-padding">
+  <h1>Register Web Form</h1>
+  <!----  <div>
+    To change the content of this section, you will make edits to the
+    incidents.html file located in the /js/views folder.
+  </div>-->
+
+  <div id="formulario" style="width: 1px; min-width: 100%;">
+      
+          <oj-input-text id="inputtext1" virtual-keyboard="number" label-hint='Type Survived Indicator' value="{{typeSurvivedIndicator}}"></oj-input-text>
+        
+          <oj-input-text id="inputtext2" virtual-keyboard="text" label-hint='Passanger Class' value="{{passangerClass}}"></oj-input-text>
+          
+          <oj-input-text id="inputtext3" virtual-keyboard="text" label-hint='Type Name Passanger' value="{{typeNamePassanger}}"></oj-input-text>
+      
+          <oj-input-text id="inputtext4" virtual-keyboard="text" label-hint='Type Sex/Gender' value="{{typeGender}}"></oj-input-text>
+      
+          <oj-input-text id="inputtext5" virtual-keyboard="number" label-hint='Type Age' value="{{typeAge}}"></oj-input-text>
+      
+          <oj-input-text id="inputtext6"  virtual-keyboard="text" label-hint='Type Siblings/Spouses Aboard' value="{{typeSiblings}}"></oj-input-text>
+
+          <oj-input-text id="inputtext7" virtual-keyboard="text" label-hint='Type Parents/Children Aboard' value="{{typeparentsAboard}}"></oj-input-text> </oj-form-layout>
+        
+          <oj-input-text id="inputtext8" virtual-keyboard="text" label-hint='Fare paid' value="{{typefarePaid}}"></oj-input-text> </oj-form-layout>
+  </div>
+   
+<!--on-oj-action="[[buttonAction]]-->
+  <div id="buttons-container">
+      <oj-button id="button1" > Add </oj-button>
+      <oj-button id="button2" > Edit </oj-button>
+      <oj-button id="button3" > Delete </oj-button>
+      <oj-button id="button4" "> Clear </oj-button>
+  </div>
+  
+</div>

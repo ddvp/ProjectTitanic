@@ -1,0 +1,26 @@
+{
+  "name": "titanic",
+  "version": "1.0.0",
+  "description": "An Oracle JavaScript Extension Toolkit(JET) web app",
+  "dependencies": {
+    "@oracle/oraclejet": "~13.1.0",
+    "chromedriver": "^109.0.0",
+    "selenium-webdriver": "^4.8.0"
+  },
+  "devDependencies": {
+    "@oracle/oraclejet-tooling": "~13.1.0",
+    "fs-extra": "^8.1.0",
+    "glob": "7.2.0",
+    "underscore": "^1.10.2"
+  },
+  "engines": {
+    "node": ">=12.21.0"
+  },
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,67 @@
+<!--
+ Copyright (c) 2014, 2022, Oracle and/or its affiliates.
+ Licensed under The Universal Permissive License (UPL), Version 1.0
+ as shown at https://oss.oracle.com/licenses/upl/
+ -->
+<link rel="stylesheet" href="../css/app.css" />
+
+<h1>Titanic View Data</h1>
+
+<div class="oj-hybrid-padding">
+  <h2>Dashboard</h2>
+  <oj-table
+    id="table"
+    aria-label="Titanic Data"
+    data="[[dataprovider]]"
+    selection-mode='{"row": "multiple", "column": "multiple"}'
+    dnd='{"reorder": {"columns": "enabled"}}'
+    scroll-policy="loadMoreOnScroll"
+    scroll-policy-options='{"fetchSize": 10}'
+    columns='[{"headerText": "Survived", 
+             "field": "Survived",
+             "headerClassName": "oj-sm-only-hide",
+             "className": "oj-sm-only-hide",
+             "resizable": "enabled",
+             "id": "Survived"},
+            {"headerText": "Pclass", 
+             "field": "Pclass",
+             "resizable": "enabled",
+             "id": "Pclass"},
+            {"headerText": "Name", 
+             "field": "Name",
+             "headerClassName": "oj-sm-only-hide",
+             "className": "oj-sm-only-hide",
+             "resizable": "enabled",
+             "id": "Name"},
+            {"headerText": "Sex", 
+             "field": "Sex",
+             "resizable": "enabled",
+             "id": "Sex"},
+            {"headerText": "Age", 
+             "field": "Age",
+             "headerClassName": "oj-md-down-hide",
+             "className": "oj-md-down-hide",
+             "resizable": "enabled",
+             "id": "Age"},
+             {"headerText": "Siblings/Spouses Aboard", 
+             "field": "Siblings/Spouses Aboard",
+             "headerClassName": "oj-md-down-hide",
+             "className": "oj-md-down-hide",
+             "resizable": "enabled",
+             "id": "SiblingsAboard"},
+             {"headerText": "Parents/Children Aboard", 
+             "field": "Parents/Children Aboard",
+             "headerClassName": "oj-md-down-hide",
+             "className": "oj-md-down-hide",
+             "resizable": "enabled",
+             "id": "ParentsAboard"},
+             {"headerText": "Fare", 
+             "field": "Fare",
+             "headerClassName": "oj-md-down-hide",
+             "className": "oj-md-down-hide",
+             "resizable": "enabled",
+             "id": "Fare"}
+             ]'
+    class="demo-table-container"
+  ></oj-table>
+</div>
